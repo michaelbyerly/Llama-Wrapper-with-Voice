@@ -7,6 +7,8 @@ Unlike standard Llama model implementations, this wrapper **allows real-time int
 
 This project runs **entirely offline**, ensuring **privacy and security** while utilizing **CUDA acceleration** for fast, efficient processing.  
 
+![WhisperLlama Wrapper in Action](./example_wrapper.png)
+
 ### **Key Features**  
 - **Real-Time Speech-to-Text**: Uses Whisper-large-v3-turbo for accurate transcription.  
 - **Interrupt-Friendly AI Responses**: Unlike most AI models, this wrapper allows real-time user interruptions via voice and text.
