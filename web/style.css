@@ -1,0 +1,200 @@
+/* web/style.css */
+
+/* Global Styles */
+body {
+    background-color: #121212 !important; /* Dark background */
+    color: #ffffff !important; /* White text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1, h5 {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background-color: #1e1e1e !important; /* Dark card background */
+    border: 1px solid #333333 !important; /* Dark border */
+}
+
+.card-body {
+    background-color: #1e1e1e !important; /* Match card background */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Form Labels */
+.form-label {
+    color: #ffffff !important;
+}
+
+/* Select Dropdown */
+.form-select {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.form-select:focus {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+    box-shadow: none !important;
+}
+
+/* Conversation Container */
+.conversation-container {
+    background-color: #1e1e1e !important;
+    border: 1px solid #333333 !important;
+    padding: 15px;
+    height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Bubbles */
+.message {
+    max-width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #0d6efd;
+    color: #ffffff;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+}
+
+.message.ai {
+    background-color: #343a40;
+    color: #ffffff;
+    align-self: flex-start;
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+}
+
+.message p {
+    margin: 0;
+}
+
+/* Adjust message width based on content */
+.message.user, .message.ai {
+    max-width: 80%;
+    width: auto;
+}
+
+/* Render code blocks */
+.message pre {
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+}
+
+.input-group .form-control {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.input-group .form-control:focus {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+    box-shadow: none !important;
+}
+
+.input-group .btn {
+    border: 1px solid #333333 !important;
+}
+
+.btn-primary {
+    background-color: #0d6efd !important;
+    border: none !important;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7 !important;
+}
+
+.btn-secondary {
+    background-color: #6c757d !important;
+    border: none !important;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268 !important;
+}
+
+/* Status Bar */
+#statusBar {
+    background-color: #343a40 !important; /* Darker background */
+    color: #ffffff !important; /* White text */
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    opacity: 0.95;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+}
+
+/* Additional Elements */
+.container {
+    background-color: #121212 !important;
+}
+
+.btn {
+    color: #ffffff !important;
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+@media (max-width: 576px) {
+    .d-flex.justify-content-center.mb-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

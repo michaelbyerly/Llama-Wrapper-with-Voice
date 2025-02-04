@@ -1,0 +1,5 @@
+{
+    "selected_device": "cuda",
+    "selected_audio_source": 10,
+    "selected_ollama_model": "llama3.2-vision:11b"
+}

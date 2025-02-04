@@ -1,0 +1,69 @@
+<!-- web/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcription App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootswatch Darkly Theme for Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <!-- Include marked.js for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="card mt-4">
+            <div class="card-body">
+                <!-- Ollama Model Selection -->
+                <div class="mb-3">
+                    <label for="ollamaModelSelector" class="form-label">Select Ollama Model:</label>
+                    <select class="form-select" id="ollamaModelSelector">
+                        <option selected disabled>Loading models...</option>
+                    </select>
+                </div>
+                <!-- Device Selection -->
+                <div class="mb-3">
+                    <label for="deviceSelector" class="form-label">Select Processing Device:</label>
+                    <select class="form-select" id="deviceSelector">
+                        <option selected disabled>Loading devices...</option>
+                    </select>
+                </div>
+                <!-- Audio Source Selection -->
+                <div class="mb-3">
+                    <label for="audioSource" class="form-label">Select Audio Source:</label>
+                    <select class="form-select" id="audioSource">
+                        <option selected disabled>Loading audio sources...</option>
+                    </select>
+                </div>
+                <!-- Start/Stop Buttons -->
+                <div class="d-flex justify-content-center mb-4 flex-wrap">
+                    <button id="startBtn" class="btn btn-success me-2 mb-2">Start</button>
+                    <button id="stopBtn" class="btn btn-danger mb-2" disabled>Stop</button>
+                    <button id="muteBtn" class="btn btn-secondary ms-2 mb-2" disabled>Mute</button>
+                </div>
+                <!-- Conversation Display -->
+                <div class="conversation-container mb-3" id="conversationContainer">
+                    <!-- Messages will be appended here -->
+                </div>
+                <!-- Input Box -->
+                <div class="input-group mb-3">
+                    <input type="text" id="userInput" class="form-control" placeholder="Type a message...">
+                    <button id="sendBtn" class="btn btn-primary">Send</button>
+                </div>
+                <!-- Status Bar -->
+                <div id="statusBar" class="alert alert-info mt-3 d-none" role="alert">
+                    <!-- Status messages will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (required for Selectize) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Eel JS -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

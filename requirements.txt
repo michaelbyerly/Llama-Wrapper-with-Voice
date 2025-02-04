@@ -1,0 +1,8 @@
+torch
+transformers
+librosa
+soundcard
+eel
+ollama
+numpy
+pythoncom
