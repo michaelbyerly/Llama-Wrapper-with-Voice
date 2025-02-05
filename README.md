@@ -1,4 +1,4 @@
-## **WhisperLlama Wrapper – Real-Time Speech-to-AI with Interruptions**  
+## **Whisper Llama Wrapper – Real-Time Speech-to-AI with Interruptions**  
 
 ### **Description**  
 WhisperLlama Wrapper is a **real-time, local speech-to-text AI system** that integrates OpenAI’s **Whisper-large-v3-turbo** for transcription and Ollama’s **llama3.2-vision:11b** for intelligent, context-aware responses.  
